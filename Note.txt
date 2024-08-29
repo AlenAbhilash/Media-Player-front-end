@@ -1,0 +1,11 @@
+What is Lifting State Up?
+
+Lifting state up is a pattern in React where you 
+move state to the closest common ancestor of components 
+that need to share or modify that state. Instead of 
+maintaining duplicate state in multiple components,
+you keep the state in a single parent component and 
+pass it down to child components via props. When a 
+child component needs to modify that state, it does
+so by calling a function provided by the parent 
+component, which updates the state.
